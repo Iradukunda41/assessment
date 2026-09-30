@@ -4,33 +4,36 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Montserrat">
      <title>Clothing Store</title>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Montserrat">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+     <!-- Hidden checkbox controls the mobile menu -->
+     <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-     <nav class=" sidebar" id="sidebar">
+     <nav class="sidebar">
           <div class="sidebar-top">
-               <button class="close-btn">&times;</button>
-               <h3 class=" logo">LOGO</h3>
+               <label for="menu-toggle" class="close-btn">&times;</label>
+               <h3 class="logo">LOGO</h3>
           </div>
 
           <div class="sidebar-links">
                <a href="#">Shirts</a>
                <a href="#">Dresses</a>
 
-               <button class="accordion-btn" id="jeansBtn">
-                    Jeans <i class="fa fa-caret-down"></i>
-               </button>
-               <div class="submenu" id="jeansMenu">
-                    <a href="#" class="active"><i class="fa fa-caret-right"></i> Skinny</a>
-                    <a href="#">Relaxed</a>
-                    <a href="#">Bootcut</a>
-                    <a href="#">Straight</a>
-               </div>
+               <details class="accordion">
+                    <summary>Jeans <i class="fa fa-caret-down"></i></summary>
+                    <div class="submenu">
+                         <a href="#" class="active"><i class="fa fa-caret-right"></i> Skinny</a>
+                         <a href="#">Relaxed</a>
+                         <a href="#">Bootcut</a>
+                         <a href="#">Straight</a>
+                    </div>
+               </details>
 
                <a href="#">Jackets</a>
                <a href="#">Gymwear</a>
@@ -41,90 +44,92 @@
           <a href="#footer" class="sidebar-extra">Contact</a>
           <a href="#" class="sidebar-extra">Newsletter</a>
           <a href="#subscribe" class="sidebar-extra">Subscribe</a>
+     </nav>
 
+     <label for="menu-toggle" class="overlay"></label>
 
-          <header class="topbar">
-               <div class="logo">LOGO</div>
-               <button><i class="fa fa-bars"></i></button>
+     <header class="topbar">
+          <div class="logo">LOGO</div>
+          <label for="menu-toggle" class="menu-btn" aria-label="Open menu"><i class="fa fa-bars"></i></label>
+     </header>
+
+     <main class="main">
+
+          <header class="page-header">
+               <p>Jeans</p>
+               <p class="icons">
+                    <i class="fa fa-shopping-cart"></i>
+                    <i class="fa fa-search"></i>
+               </p>
           </header>
 
-          <main class=" main">
+          <section class="hero">
+               <img src="images/jeans.jpg" alt="Jeans">
+               <div class="hero-text">
+                    <h1>New arrivals</h1>
+                    <h2>COLLECTION 2016</h2>
+                    <a href="#jeans" class="btn btn-black">SHOP NOW</a>
+               </div>
+          </section>
 
-               <header class="page-header">
-                    <p>Jeans</p>
-                    <p class="icons">
-                         <i class="fa fa-shopping-cart"></i>
-                         <i class="fa fa-search"></i>
-                    </p>
-               </header>
+          <p class="item-count" id="jeans">8 items</p>
 
+          <section class="product-grid">
+               <article class="product">
+                    <img src="images/jeans1.jpg" alt="Ripped Skinny Jeans">
+                    <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+               </article>
 
-               <section class="hero">
-                    <img src="images/jeans.jpg" alt="Jeans">
-                    <div class="hero-text">
-                         <h1>New arrivals</h1>
-                         <h2>COLLECTION 2016</h2>
-                         <a href="#jeans" class="btn btn-black">SHOP NOW</a>
+               <article class="product">
+                    <img src="images/jeans2.jpg" alt="Mega Ripped Jeans">
+                    <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+               </article>
+
+               <article class="product">
+                    <div class="img-wrap">
+                         <img src="images/jeans2 (1).jpg" alt="Mega Ripped Jeans">
+                         <span class="tag">New</span>
+                         <button class="btn btn-black buy-btn">Buy now <i class="fa fa-shopping-cart"></i></button>
                     </div>
-               </section>
+                    <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+               </article>
 
-               <p class="item-count" id="jeans">8 items</p>
-               <section class="product-grid">
-                    <article class="product">
-                         <img src="images/jeans1.jpg" alt="Ripped Skinny Jeans">
-                         <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
-                    </article>
-                    <article class="product">
-                         <img src="images/jeans2.jpg" alt="Mega Ripped Jeans">
-                         <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-                    </article>
+               <article class="product">
+                    <img src="images/jeans3.jpg" alt="Washed Skinny Jeans">
+                    <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+               </article>
 
-                    <article class="product">
-                         <div class="img-wrap">
-                              <img src="images/jeans2 (1).jpg" alt="Mega Ripped Jeans">
-                              <span class="tag">New</span>
-                              <button class="btn btn-black buy-btn">Buy now <i class="fa fa-shopping-cart"></i></button>
-                         </div>
-                         <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-                    </article>
+               <article class="product">
+                    <img src="images/jeans3 (1).jpg" alt="Washed Skinny Jeans">
+                    <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+               </article>
 
-                    <article class="product">
-                         <img src="images/jeans3.jpg" alt="Washed Skinny Jeans">
-                         <p>Washed Skinny Jeans<br><b>$20.50</b></p>
-                    </article>
+               <article class="product">
+                    <div class="img-wrap">
+                         <img src="images/jeans4.jpg" alt="Vintage Skinny Jeans">
+                         <span class="tag">Sale</span>
+                         <button class="btn btn-black buy-btn">Buy now <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                    <p>Vintage Skinny Jeans<br><b class="text-red">$14.99</b></p>
+               </article>
 
-                    <article class="product">
-                         <img src="images/jeans3 (1).jpg" alt="Washed Skinny Jeans">
-                         <p>Washed Skinny Jeans<br><b>$20.50</b></p>
-                    </article>
+               <article class="product">
+                    <img src="images/jeans4 (1).jpg" alt="Vintage Skinny Jeans">
+                    <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+               </article>
 
-                    <article class="product">
-                         <div class="img-wrap">
-                              <img src="images/jeans4.jpg" alt="Vintage Skinny Jeans">
-                              <span class="tag">Sale</span>
-                              <button class="btn btn-black buy-btn">Buy now <i class="fa fa-shopping-cart"></i></button>
-                         </div>
-                         <p>Vintage Skinny Jeans<br><b class="text-red">$14.99</b></p>
-                    </article>
+               <article class="product">
+                    <img src="images/jeans5.jpg" alt="Ripped Skinny Jeans">
+                    <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+               </article>
+          </section>
 
-                    <article class="product">
-                         <img src="images/jeans4 (1).jpg" alt="Vintage Skinny Jeans">
-                         <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
-                    </article>
-
-                    <article class="product">
-                         <img src="images/jeans5.jpg" alt="Ripped Skinny Jeans">
-                         <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
-                    </article>
-               </section>
-
-               <section class="subscribe" id="subscribe">
-                    <h1>Subscribe</h1>
-                    <p>To get special offers and VIP treatment:</p>
-                    <input type="email" placeholder="Enter e-mail">
-                    <button type="button" class="btn btn-red">Subscribe</button>
-               </section>
-          </main>
+          <section class="subscribe" id="subscribe">
+               <h1>Subscribe</h1>
+               <p>To get special offers and VIP treatment:</p>
+               <input type="email" placeholder="Enter e-mail">
+               <button type="button" class="btn btn-red">Subscribe</button>
+          </section>
 
           <footer class="footer" id="footer">
                <div class="contact">
@@ -134,7 +139,7 @@
                          <input type="text" name="Name" placeholder="Name" required>
                          <input type="email" name="Email" placeholder="Email" required>
                          <input type="text" name="Subject" placeholder="Subject" required>
-                         <input type="text" name="Message" placeholder="Message" required>
+                         <textarea name="Message" placeholder="Message" rows="3" required></textarea>
                          <button type="submit" class="btn btn-black btn-block">Send</button>
                     </form>
                </div>
@@ -170,12 +175,11 @@
                          <i class="fa fa-twitter"></i>
                          <i class="fa fa-linkedin"></i>
                     </p>
-               </div> <br><br>
+               </div>
+
                <p class="doned">Powered as Assessment</p>
           </footer>
-
-
-
+     </main>
 
 </body>
 
