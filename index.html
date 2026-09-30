@@ -5,7 +5,6 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Montserrat">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <title>Clothing Store</title>
      <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +12,7 @@
 <body>
 
 
-     <nav class="sidebar" id="sidebar">
+     <nav class=" sidebar" id="sidebar">
           <div class="sidebar-top">
                <button class="close-btn">&times;</button>
                <h3 class=" logo">LOGO</h3>
@@ -49,10 +48,7 @@
                <button><i class="fa fa-bars"></i></button>
           </header>
 
-
-          <div class="overlay" id="ov></div>
-
-     <main class=" main">
+          <main class=" main">
 
                <header class="page-header">
                     <p>Jeans</p>
@@ -62,7 +58,7 @@
                     </p>
                </header>
 
-               <!-- Hero -->
+
                <section class="hero">
                     <img src="images/jeans.jpg" alt="Jeans">
                     <div class="hero-text">
@@ -73,14 +69,11 @@
                </section>
 
                <p class="item-count" id="jeans">8 items</p>
-
-               <!-- Product grid -->
                <section class="product-grid">
                     <article class="product">
                          <img src="images/jeans1.jpg" alt="Ripped Skinny Jeans">
                          <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
                     </article>
-
                     <article class="product">
                          <img src="images/jeans2.jpg" alt="Mega Ripped Jeans">
                          <p>Mega Ripped Jeans<br><b>$19.99</b></p>
@@ -88,7 +81,7 @@
 
                     <article class="product">
                          <div class="img-wrap">
-                              <img src="images/jeans2.jpg" alt="Mega Ripped Jeans">
+                              <img src="images/jeans2 (1).jpg" alt="Mega Ripped Jeans">
                               <span class="tag">New</span>
                               <button class="btn btn-black buy-btn">Buy now <i class="fa fa-shopping-cart"></i></button>
                          </div>
@@ -101,7 +94,7 @@
                     </article>
 
                     <article class="product">
-                         <img src="images/jeans3.jpg" alt="Washed Skinny Jeans">
+                         <img src="images/jeans3 (1).jpg" alt="Washed Skinny Jeans">
                          <p>Washed Skinny Jeans<br><b>$20.50</b></p>
                     </article>
 
@@ -115,85 +108,73 @@
                     </article>
 
                     <article class="product">
-                         <img src="images/jeans4.jpg" alt="Vintage Skinny Jeans">
+                         <img src="images/jeans4 (1).jpg" alt="Vintage Skinny Jeans">
                          <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
                     </article>
 
                     <article class="product">
-                         <img src="images/jeans1.jpg" alt="Ripped Skinny Jeans">
+                         <img src="images/jeans5.jpg" alt="Ripped Skinny Jeans">
                          <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
                     </article>
                </section>
 
-               <!-- Subscribe -->
                <section class="subscribe" id="subscribe">
                     <h1>Subscribe</h1>
                     <p>To get special offers and VIP treatment:</p>
                     <input type="email" placeholder="Enter e-mail">
                     <button type="button" class="btn btn-red">Subscribe</button>
                </section>
+          </main>
 
-               <!-- Footer -->
-               <footer class="footer" id="footer">
-                    <div>
-                         <h4>Contact</h4>
-                         <p>Questions? Go ahead.</p>
-                         <form action="#" method="post">
-                              <input type="text" name="Name" placeholder="Name" required>
-                              <input type="email" name="Email" placeholder="Email" required>
-                              <input type="text" name="Subject" placeholder="Subject" required>
-                              <input type="text" name="Message" placeholder="Message" required>
-                              <button type="submit" class="btn btn-black btn-block">Send</button>
-                         </form>
-                    </div>
-
-                    <div>
-                         <h4>About</h4>
-                         <p><a href="#">About us</a></p>
-                         <p><a href="#">We're hiring</a></p>
-                         <p><a href="#">Support</a></p>
-                         <p><a href="#">Find store</a></p>
-                         <p><a href="#">Shipment</a></p>
-                         <p><a href="#">Payment</a></p>
-                         <p><a href="#">Gift card</a></p>
-                         <p><a href="#">Return</a></p>
-                         <p><a href="#">Help</a></p>
-                    </div>
-
-                    <div>
-                         <h4>Store</h4>
-                         <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
-                         <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
-                         <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
-
-                         <h4>We accept</h4>
-                         <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
-                         <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
-
-                         <p class="social">
-                              <i class="fa fa-facebook-official"></i>
-                              <i class="fa fa-instagram"></i>
-                              <i class="fa fa-snapchat"></i>
-                              <i class="fa fa-pinterest-p"></i>
-                              <i class="fa fa-twitter"></i>
-                              <i class="fa fa-linkedin"></i>
-                         </p>
-                    </div>
-               </footer>
-
-               <div class="credit">&copy; Your Store Name</div>
-               </main>
-
-               <!-- Newsletter modal -->
-               <div class="modal" id="newsletter">
-                    <div class="modal-content">
-                         <button class="modal-close">&times;</button>
-                         <h2 class="logo">NEWSLETTER</h2>
-                         <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
-                         <input type="email" placeholder="Enter e-mail">
-                         <button type="button" class="btn btn-red">Subscribe</button>
-                    </div>
+          <footer class="footer" id="footer">
+               <div class="contact">
+                    <h4>Contact</h4>
+                    <p>Questions? Go ahead.</p>
+                    <form action="#" method="post">
+                         <input type="text" name="Name" placeholder="Name" required>
+                         <input type="email" name="Email" placeholder="Email" required>
+                         <input type="text" name="Subject" placeholder="Subject" required>
+                         <input type="text" name="Message" placeholder="Message" required>
+                         <button type="submit" class="btn btn-black btn-block">Send</button>
+                    </form>
                </div>
+
+               <div>
+                    <h4>About</h4>
+                    <p><a href="#">About us</a></p>
+                    <p><a href="#">We're hiring</a></p>
+                    <p><a href="#">Support</a></p>
+                    <p><a href="#">Find store</a></p>
+                    <p><a href="#">Shipment</a></p>
+                    <p><a href="#">Payment</a></p>
+                    <p><a href="#">Gift card</a></p>
+                    <p><a href="#">Return</a></p>
+                    <p><a href="#">Help</a></p>
+               </div>
+
+               <div>
+                    <h4>Store</h4>
+                    <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+                    <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+                    <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+
+                    <h4>We accept</h4>
+                    <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+                    <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+
+                    <p class="social">
+                         <i class="fa fa-facebook-official"></i>
+                         <i class="fa fa-instagram"></i>
+                         <i class="fa fa-snapchat"></i>
+                         <i class="fa fa-pinterest-p"></i>
+                         <i class="fa fa-twitter"></i>
+                         <i class="fa fa-linkedin"></i>
+                    </p>
+               </div> <br><br>
+               <p class="doned">Powered as Assessment</p>
+          </footer>
+
+
 
 
 </body>
