@@ -193,7 +193,6 @@ body {
 
 .subscribe .btn { margin-bottom: 8px; }
 
-/* Footer */
 .footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -227,7 +226,7 @@ body {
   text-align: center;
 }
 
-/* ---------- Newsletter modal ---------- */
+
 .modal {
   display: none;
   position: fixed;
@@ -260,15 +259,21 @@ body {
   cursor: pointer;
 }
 
+.about a {
+     color: #000;
+}
+.
+
 .doned {
-     background-color: #000;
-     justify-content: center;
-     align-items: center;
-     font-size: 28px;
-     font-weight: bold;
-     width: 100%;
-     color: white;
-     padding:20px;
+  display: block;
+  justify-content: center;
+  width: 100%;
+  padding: 8px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  font: inherit;
+  color: white;
+  background-color: #000;
 }
 
 @keyframes zoom {
